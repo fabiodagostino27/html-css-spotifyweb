@@ -1,12 +1,63 @@
 /*Media query for small devices*/
 @media screen and (min-width: 480px) {
     #sidebar {
-        flex-basis: 180px;
+        flex-basis: 200px;
+        align-items: flex-start;
     }
 
     #main-section {
-        flex-basis: calc(100% - 180px);
+        flex-basis: calc(100% - 200px);
     }
+    
+    #logo-big {
+        display: flex;
+        align-items: center;
+    }
+
+    #logo-small {
+        display: none;
+    }
+
+    #sidebar ul li a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #sidebar ul li a img {
+        width: 30px;
+    }
+
+    #sidebar #nav span {
+        display: inline;
+    }
+    
+    #sidebar #nav li {
+        border-left: 3px solid transparent;
+    }
+
+    #sidebar #nav li:first-child {
+        border-color: #B8FF32;
+    }
+    
+    #sidebar #playlist-list {
+        display: flex;
+    }
+
+    #sidebar-bottom span {
+        display: inline-block;
+    }
+
+    #download {
+        border-bottom: 1px solid #A3A3A3;
+        padding-bottom: 5px;
+    }
+
+    #profile span {
+        font-weight: 800;
+        color: white;
+    }
+    
 }
 
 /*Media query for medium devices*/
