@@ -333,14 +333,14 @@ html {
     width: 100%;
 }
 
-#bottom-center-bottom #slider {
+.slider {
     background-color: var(--color-text);
     flex-basis: 90%;
     height: 8px;
     border-radius: 20px;
 }
 
-#slider > div {
+.slider > div {
     width: 20%;
     background-color: white;
     height: 100%;
@@ -348,21 +348,29 @@ html {
     position: relative;
 }
 
-#slider .rounded {
+.slider .rounded {
     display: none;
     background-color: white;
     width: 15px;
     aspect-ratio: 1;
 }
 
-#slider > div:hover {
+.slider > div:hover {
     background-color: var(--color-highlight);
 }
 
-#slider > div:hover .rounded {
+.slider > div:hover .rounded {
     display: block;
     position: absolute;
     right: -1px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+#bottom-right {
+    display: none;
+}
+
+#bottom-right .slider {
+    flex-basis: 50%;
 }

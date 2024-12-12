@@ -65,6 +65,11 @@
     #download i {
         font-size: 1.2rem;
     }
+
+    #bottom-left .icons {
+        flex-direction: row;
+        gap: 10px;
+    }
 }
 
 /*Media query for medium devices*/
@@ -76,6 +81,26 @@
     .albums-list {
         justify-content: flex-start;
         gap: 15px;
+    }
+
+    #bottom #bottom-left {
+        flex-basis: 20%;
+    }
+
+    #bottom #bottom-left figure {
+        min-width: 50px;
+        max-width: 70px;
+    }
+
+    #bottom #bottom-center {
+        flex-basis: 50%;
+    }
+
+    #bottom-right {
+        display: flex;
+        flex-basis: 20%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -93,6 +118,21 @@
     .albums-list {
         justify-content: flex-start;
         gap: 20px;
+    }
+
+    #bottom #bottom-left {
+        flex-basis: 15%;
+    }
+
+    #bottom #bottom-center {
+        flex-basis: 30%;
+    }
+
+    #bottom-right {
+        display: flex;
+        flex-basis: 15%;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
