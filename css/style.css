@@ -247,7 +247,7 @@ html {
     font-size: 0.8rem;
 }
 
-.rounded figure {
+.rounded {
     border-radius: 50%;
     overflow: hidden;
 }
@@ -330,8 +330,39 @@ html {
     gap: 5px;
     font-size: 0.8rem;
     justify-content: space-between;
+    width: 100%;
 }
 
-#bottom-center-bottom input::-webkit-slider-runnable-track {
-    
+#bottom-center-bottom #slider {
+    background-color: var(--color-text);
+    flex-basis: 90%;
+    height: 8px;
+    border-radius: 20px;
+}
+
+#slider > div {
+    width: 20%;
+    background-color: white;
+    height: 100%;
+    border-radius: 29px;
+    position: relative;
+}
+
+#slider .rounded {
+    display: none;
+    background-color: white;
+    width: 15px;
+    aspect-ratio: 1;
+}
+
+#slider > div:hover {
+    background-color: var(--color-highlight);
+}
+
+#slider > div:hover .rounded {
+    display: block;
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
 }
