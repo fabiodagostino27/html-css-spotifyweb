@@ -195,10 +195,15 @@ html {
     font-weight: 800;
 }
 
+#main-section-bottom h4 {
+    font-size: 0.9rem;
+}
+
 .albums-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 10px;
 }
 
 .album {
@@ -206,7 +211,7 @@ html {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    flex-basis: 49%;
+    flex-basis: 48%;
     text-align: center;
 }
 
@@ -236,7 +241,7 @@ html {
     color: white;
 }
 
-.albums-list .album span {
+#main-section-bottom span {
     color: var(--color-text);
     font-size: 0.8rem;
 }
