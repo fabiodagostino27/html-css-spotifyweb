@@ -69,7 +69,14 @@
 
 /*Media query for medium devices*/
 @media screen and (min-width: 768px) {
-    
+    .album {
+        flex-basis: calc(100% / 4 - 15px * 3 / 4);
+    }
+
+    .albums-list {
+        justify-content: flex-start;
+        gap: 15px;
+    }
 }
 
 /*Media query for large devices*/
@@ -78,4 +85,14 @@
         width: 60%;
         margin: 0 auto;
     }
+
+    .album {
+        flex-basis: calc(100% / 6 - 20px * 5 / 6);
+    }
+
+    .albums-list {
+        justify-content: flex-start;
+        gap: 20px;
+    }
 }
+
