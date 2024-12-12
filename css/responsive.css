@@ -37,7 +37,7 @@
     }
 
     #sidebar #nav li:first-child {
-        border-color: #B8FF32;
+        border-color: var(--color-highlight);
     }
     
     #sidebar #playlist-list {
@@ -74,5 +74,8 @@
 
 /*Media query for large devices*/
 @media screen and (min-width: 1024px) {
-    
+    #main-section-bottom ul {
+        width: 60%;
+        margin: 0 auto;
+    }
 }
