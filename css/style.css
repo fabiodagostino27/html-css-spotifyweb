@@ -35,7 +35,7 @@ html {
 
 #main-section-header {
     background-color: rgba(0, 0, 0, 0.582);
-    height: 8vh;
+    height: 10%;
     position: sticky;
     top: 0;
 }
@@ -53,8 +53,9 @@ html {
 
 #logo-big {
     display: none;
-    height: 8vh;
+    height: 10%;
     width: 80%;
+    margin-bottom: 5px;
 }
 
 #sidebar ul {
@@ -81,7 +82,8 @@ html {
 
 #sidebar #playlist-list {
     display: none;
-    gap: 10px;
+    gap: 15px;
+    overflow: hidden;
 }
 
 #playlist-list i {
@@ -121,4 +123,8 @@ html {
 
 #sidebar-bottom i {
     justify-content: center;
+}
+
+#sidebar li:hover, #sidebar-bottom #download:hover {
+    color: white;
 }
