@@ -162,7 +162,7 @@ html {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 #main-section-bottom ul {
@@ -204,6 +204,7 @@ html {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 10px;
+    margin-top: 20px;
 }
 
 .album {
@@ -244,4 +245,9 @@ html {
 #main-section-bottom span {
     color: var(--color-text);
     font-size: 0.8rem;
+}
+
+.rounded figure {
+    border-radius: 50%;
+    overflow: hidden;
 }
