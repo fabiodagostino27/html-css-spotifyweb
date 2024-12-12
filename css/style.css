@@ -251,3 +251,87 @@ html {
     border-radius: 50%;
     overflow: hidden;
 }
+
+/*Bottom*/
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+#bottom #bottom-left {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#bottom #bottom-left figure {
+    flex-basis: 25%;
+}
+
+#bottom #bottom-left span {
+    font-size: 0.7rem;
+}
+
+#bottom #bottom-left span, #bottom #bottom-left i {
+    color: var(--color-text);
+}
+
+#bottom-left .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#bottom #bottom-left span:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+#bottom #bottom-left i:hover {
+    color: white;
+}
+
+#bottom #bottom-center {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#bottom-center-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+    width: 60%;
+}
+
+#bottom i:hover {
+    cursor: pointer;
+}
+
+#bottom-center-top .fa-circle-play {
+    font-size: 2rem;
+}
+
+#bottom-center-top .fa-circle-play:hover {
+    font-size: 2.2rem;
+}
+
+#bottom-center-bottom {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+#bottom-center-bottom input::-webkit-slider-runnable-track {
+    
+}
