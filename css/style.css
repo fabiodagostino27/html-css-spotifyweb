@@ -56,6 +56,7 @@ html {
     height: 10%;
     position: sticky;
     top: 0;
+    z-index: 1;
     color: white;
     display: flex;
     align-items: center;
@@ -159,6 +160,9 @@ html {
 /*Main section*/
 #main-section-bottom {
     padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #main-section-bottom ul {
@@ -184,4 +188,55 @@ html {
     width: 40%;
     text-align: center;
     margin: 2px auto;
+}
+
+#main-section-bottom h3, #main-section-bottom h4 {
+    color: white;
+    font-weight: 800;
+}
+
+.albums-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    flex-basis: 49%;
+    text-align: center;
+}
+
+.album figure {
+    position: relative;
+}
+
+.album figure > div {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.album figure:hover > div {
+    display: flex;
+}
+
+.album figure > div i {
+    font-size: 3rem;
+    color: white;
+}
+
+.albums-list .album span {
+    color: var(--color-text);
+    font-size: 0.8rem;
 }
