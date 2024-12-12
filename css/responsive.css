@@ -57,7 +57,14 @@
         font-weight: 800;
         color: white;
     }
+
+    #download a, #profile a {
+        justify-content: flex-start;
+    }
     
+    #download i {
+        font-size: 1.2rem;
+    }
 }
 
 /*Media query for medium devices*/
